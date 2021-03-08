@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 
 import {fetchTrips} from '../actions/fetchTrips'
 import Trips from '../components/Trips'
+import Trip from '../components/Trip'
 import TripInput from '../components/TripInput'
 
 class TripsContainer extends React.Component {
