@@ -22,7 +22,7 @@ class TripsContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
-    return{
+    return {
       trips: state.trips
     }
 }
