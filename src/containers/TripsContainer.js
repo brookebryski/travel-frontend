@@ -15,7 +15,7 @@ class TripsContainer extends React.Component {
         return (
             <div>
               <TripInput />
-              <Trips />
+              <Trips trips={this.props.trips}/>
             </div>
         )
     }
