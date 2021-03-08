@@ -10,7 +10,7 @@ export const addTrip = (data) => {
       body: JSON.stringify(data)
     })
     .then(response => response.json())
-    .then(account => dispatch({type: 'ADD_TRIP', payload: trip}))
+    .then(trip => dispatch({type: 'ADD_TRIP', payload: trip}))
     }
 
 }
