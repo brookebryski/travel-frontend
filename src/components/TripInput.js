@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addTrip} from '../actions/addTrip'
 
 
 class TripInput extends React.Component {
@@ -7,6 +9,21 @@ class TripInput extends React.Component {
      location: '',
      days_spent: ''   
     }
+
+    handleChange = (event) => {
+        this.setState({
+          [event.target.name]: event.target.value
+        })
+      }
+    
+      handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.addTrip(this.state)
+        this.setState({
+          location: '',
+          days_spent: ''
+        })
+      }
 
     render() {
        return (
@@ -23,4 +40,4 @@ class TripInput extends React.Component {
     }
 }
 
-export default TripInput 
+export default connect(null, {addTrip})(TripInput) 
