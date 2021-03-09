@@ -9,13 +9,6 @@ export const addActivity = (activity, tripId) => {
         body: JSON.stringify(activity)
       })
       .then(response => response.json())
-      .then(trip => {
-          if (trip.error) {
-            alert(trip.error)
-          } else {
-            dispatch({type: 'ADD_ACTIVITY', payload: activity})
-          }
-        }
-      )
+      .then(trip => dispatch({type: 'ADD_ACTIVITY', payload: activity}))
     }
   }

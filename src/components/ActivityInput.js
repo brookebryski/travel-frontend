@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {addActivity} from '../actions/addActivity'
 
 class ActivityInput extends React.Component {
 
@@ -45,4 +46,4 @@ class ActivityInput extends React.Component {
     }
 }
 
-export default connect(null)(ActivityInput)
+export default connect(null, {addActivity})(ActivityInput)
