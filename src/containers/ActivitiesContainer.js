@@ -1,5 +1,6 @@
 import React from 'react'
 import ActivityInput from '../components/ActivityInput'
+import Activities from '../components/Activities'
 
 
 class ActivitiesContainer extends React.Component {
@@ -8,6 +9,7 @@ class ActivitiesContainer extends React.Component {
         return (
          <div>
              <ActivityInput/>
+             <Activities/>
          </div>
         )
     }
