@@ -1,4 +1,5 @@
 import React from 'react'
+import {Redirect} from 'react-router-dom'
 
 const Trip = (props) => {
 
@@ -10,6 +11,7 @@ const Trip = (props) => {
 
     return (
         <li> 
+            {trip ? null : <Redirect to='/trips' />}
             {trip ? trip.location : null} - {trip ? trip.days_spent : null}
          </li> 
     )
