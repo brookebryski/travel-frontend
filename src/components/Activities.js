@@ -4,7 +4,9 @@ import React from 'react'
 
     return (
         <div>
-            Activities
+         {props.activities && props.activities.map(activity =>
+         <li key={activity.id}><h3>{activity.place}:</h3>({activity.kind})<br></br> {activity.description}</li>
+         )}
         </div>
     )
 
