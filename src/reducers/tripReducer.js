@@ -6,9 +6,15 @@ export default function tripReducer(state = {trips: []}, action) {
      case 'ADD_TRIP':
        return {...state, trips: [...state.trips, action.payload]}
     case 'ADD_ACTIVITY':
-       return {...state, trips: [...state.trips, action.payload]}
+      let trips = state.trips.map(trip => {
+        if (trip.id === action.payload.id) {
+          return action.payload
+        } else {
+           return trip
+        }
+      })
+       return {...state, trips: trips}
     default:
       return state
   }
-
 }
