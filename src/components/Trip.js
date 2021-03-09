@@ -10,10 +10,10 @@ const Trip = (props) => {
     console.log(trip)
 
     return (
-        <li> 
+        <h1>
             {trip ? null : <Redirect to='/trips' />}
             {trip ? trip.location : null} - {trip ? trip.days_spent : null}
-         </li> 
+        </h1> 
     )
 
 }
