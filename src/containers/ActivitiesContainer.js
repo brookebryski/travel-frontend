@@ -9,7 +9,7 @@ class ActivitiesContainer extends React.Component {
     render () {
         return (
          <div>
-             <ActivityInput/>
+             <ActivityInput trip={this.props.trip}/>
              <Activities activities={this.props.trip && this.props.trip.activities}/>
          </div>
         )
