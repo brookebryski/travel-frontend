@@ -1,6 +1,8 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 
+import ActivitiesContainer from '../containers/ActivitiesContainer'
+
 const Trip = (props) => {
 
     console.log(props)
@@ -10,10 +12,12 @@ const Trip = (props) => {
     console.log(trip)
 
     return (
+        <div>
         <h1>
-            {trip ? null : <Redirect to='/trips' />}
             {trip ? trip.location : null} - {trip ? trip.days_spent : null}
         </h1> 
+        <ActivitiesContainer/>
+        </div>
     )
 
 }
