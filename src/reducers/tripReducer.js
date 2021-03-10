@@ -22,6 +22,7 @@ export default function tripReducer(state = {trips: []}, action) {
             return trip
           }
         })
+        return {...state, trips: tripsTwo}
     default:
       return state
   }
