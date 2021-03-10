@@ -22,3 +22,4 @@ import {deleteActivity} from '../actions/deleteActivity'
  }
 
  export default connect(null, {deleteActivity})(Activities)
+
