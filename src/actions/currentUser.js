@@ -24,9 +24,9 @@ export const setMyTrips = (user, trips)=> {
 };
 
 
-export const markAsTraveledTo = (user, trips)=> {
+export const markAsClaimed = (user, trips)=> {
   return {
-    type: "MARK_AS_TRAVELED_TO",
+    type: "MARK_AS_CLAIMED",
 
     user,
     trips
@@ -101,7 +101,7 @@ export const getMyTrips = user => {
             let t = store.getState().tripsReducer
           dispatch(setMyTrips(u, t.trips));
           
-          dispatch(markAsTraveledTo(u,t.trips));
+          dispatch(markAsClaimed(u,t.trips));
         }
       });
   };
