@@ -66,7 +66,7 @@ export default (state = initialState, action) => {
         case "ADD_TRIP_HISTORY_SUCCESS":
             let newTrip = action.trip
             newTrip.claimed="true" 
-            let newTrip = [...state.trips]
+            let newList = [...state.trips]
 
             newList.forEach(t => {
                 if (t.id === newTrip.id) {

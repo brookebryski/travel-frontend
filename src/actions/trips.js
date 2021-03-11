@@ -10,7 +10,7 @@ import { getTripHistories } from "./tripHistories";
 export const fetchTripsSuccess = trips => {
   return {
     type: "GET_ALL_TRIPS_SUCCESS",
-    toys
+    trips
   };
 };
 

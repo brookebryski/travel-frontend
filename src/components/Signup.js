@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateSignupForm } from "../actions/signupForm.js"
 import { signup } from "../actions/currentUser.js"
-//import { Divider, Icon } from 'semantic-ui-react';
+import { Divider, Icon } from 'semantic-ui-react';
 
 
 const Signup = ({ signupFormData, updateSignupForm, signup }) => {

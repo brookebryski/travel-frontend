@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import TripCard from '../components/TripCard';
-//import { Card, Divider } from 'semantic-ui-react';
+import { Card, Divider } from 'semantic-ui-react';
  
 class MyTrips extends Component {
 

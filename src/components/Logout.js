@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { logout } from '../actions/currentUser'
-//import {Icon } from 'semantic-ui-react';
+import {Icon } from 'semantic-ui-react';
  
 
 

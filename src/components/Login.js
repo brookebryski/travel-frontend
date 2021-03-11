@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { updateLoginForm } from '../actions/loginForm'
 import { login } from '../actions/currentUser'
-//import { Divider, Icon } from 'semantic-ui-react';
+import { Divider, Icon } from 'semantic-ui-react';
 
  
 

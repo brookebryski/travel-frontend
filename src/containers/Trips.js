@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import TripCard from '../components/TripCard';
-//import { Card } from 'semantic-ui-react';
-//import Stats from '../components/Stats';
-//import { Divider } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react';
+import TripStats from '../components/TripStats';
+import { Divider } from 'semantic-ui-react'
 
 
 class Trips extends Component {
@@ -28,7 +28,7 @@ class Trips extends Component {
             <div className="Trips">
                 <input placeholder="tripName" value={this.state.newSearch} name="tripName" type="text" onChange={this.handleInputChange} />
             <Divider />
-            <Stats numTrips={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
+            <TripStats numTrips={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
             <Divider />
 
 

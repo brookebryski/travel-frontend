@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateTripFormData } from '../actions/tripForm';
-import { createToy } from '../actions/toys';
-//import { Form, Icon, Divider } from 'semantic-ui-react';
+import { createTrip } from '../actions/trips';
+import { Form, Icon, Divider } from 'semantic-ui-react';
  
 
 
