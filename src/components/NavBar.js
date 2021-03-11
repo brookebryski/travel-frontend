@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Menu } from 'semantic-ui-react';
 
-//import '../App.css';
+import '../App.css';
  
 
 
@@ -22,7 +22,7 @@ const NavBar = () => {
                 Home
             </Link>
 
-            <Link to='/toys' className='item'>
+            <Link to='/trips' className='item'>
                 View All Trips
             </Link>
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 //import './Toy.css';
-//import '../App.css';
+import '../App.css';
 import {Card, Image } from 'semantic-ui-react';
 import { claimTrip, unclaimTrip } from '../actions/tripHistories';
 import { connect } from 'react-redux';

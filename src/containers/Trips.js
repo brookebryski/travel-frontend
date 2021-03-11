@@ -21,14 +21,14 @@ class Trips extends Component {
         const { tripsReducer} = this.props;
         
         //copy toys so sort does not mutate
-        let topTrips = [...tripsReducer.trips].sort((a, b) => (a.users.length > b.users.length) ? -1 : 1)
+        //let topTrips = [...tripsReducer.trips].sort((a, b) => (a.users.length > b.users.length) ? -1 : 1)
         let tripsMatch = tripsReducer.trips.filter( (trip ) => trip.name.toLowerCase().includes(this.state.newSearch.toLowerCase()))
   
         return (
             <div className="Trips">
                 <input placeholder="tripName" value={this.state.newSearch} name="tripName" type="text" onChange={this.handleInputChange} />
             <Divider />
-            <TripStats numTrips={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
+            <TripStats numTrips={tripsReducer.trips.length} />
             <Divider />
 
 
