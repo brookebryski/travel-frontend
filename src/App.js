@@ -1,5 +1,5 @@
 import React from 'react';
-//import './App.css';
+import './App.css';
  
 
 import { connect } from 'react-redux';
@@ -42,7 +42,7 @@ class App extends React.Component {
           <div className="App">
           <NavBar />
 
-          <h3>I HAD THAT!</h3>
+          <h3>Travel Journal</h3>
            
           { loggedIn ? <Logout /> : <div> <Login /> <Signup /> </div> }
           { loggedIn ? <TripForm /> : ""}
