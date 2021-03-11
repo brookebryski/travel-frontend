@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
  
 
 import { connect } from 'react-redux';
 //import  NavBar  from './components/NavBar'
-import Trips from './containers/Toys';
+import Trips from './containers/Trips';
 //import TripForm from './components/TripForm';
 import MyTrips from './containers/MyTrips';
-import Signup from './components/Signup';
+//import Signup from './components/Signup';
 //import Footer from './components/Footer';
 import Home from './components/Home';
 //import About from './components/About';
@@ -15,7 +15,7 @@ import Home from './components/Home';
 //import Logout from "./components/Logout"
 import { getAllTrips } from './actions/trips';
  
-//import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import { Divider } from 'semantic-ui-react'
 //import history from './history';
 

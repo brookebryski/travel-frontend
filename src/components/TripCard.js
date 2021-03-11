@@ -1,11 +1,11 @@
 import React, { Component } from 'react'; 
-import './Toy.css';
-import '../App.css';
-import {Card, Image } from 'semantic-ui-react';
-import { claimToy, unclaimToy } from '../actions/toyOwnerships';
+//import './Toy.css';
+//import '../App.css';
+//import {Card, Image } from 'semantic-ui-react';
+import { claimTrip, unclaimTrip } from '../actions/tripHistories';
 import { connect } from 'react-redux';
  
-class ToyCard extends Component {
+class TripCard extends Component {
   
   
   constructor(props) {

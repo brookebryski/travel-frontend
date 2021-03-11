@@ -78,7 +78,7 @@ export const claimTrip = ( trip, user ) => {
          }
     }
 
-    export const unclaimTrip = ( to, trip, user ) => {
+    export const unclaimTrip = ( th, trip, user ) => {
         let selectedTripHistory = th.find(th =>  (th.user_id === user.id && th.trip_id === trip.id))
         console.log("th.id", selectedTripHistory.id)
             
