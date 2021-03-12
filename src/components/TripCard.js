@@ -61,10 +61,9 @@ class TripCard extends Component {
 
  
                 </Card.Content>
+      
 
-                <Card.Content extra>
-                    <i className='users icon user-class' /> {numUsers !== undefined ? trip.users.length : 0}
-                 </Card.Content>
+              
  
 
             {tripsReducer.currentUser.username ? buttonsVisible : ""}

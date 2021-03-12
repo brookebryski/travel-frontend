@@ -85,7 +85,6 @@ export default (state = initialState, action) => {
 
         case "REMOVE_TRIP_HISTORY_SUCCESS": 
             let updateTrips = [...state.trips]
-            //let updateMyToys = [...state.userToys]
 
             updateTrips.forEach(t => {
                 if (t.id === action.trip.id) {
