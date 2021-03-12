@@ -10,9 +10,9 @@ const initialState = {
   
     switch(action.type) {
       case "UPDATED_DATA":
-        return action.toyFormData
+        return action.tripFormData
   
-      case "RESET_TOY_FORM":
+      case "RESET_TRIP_FORM":
         return initialState;
 
   

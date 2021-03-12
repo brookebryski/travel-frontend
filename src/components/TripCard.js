@@ -28,7 +28,7 @@ class TripCard extends Component {
  
   render(){
     //Destructure to extract data from objects into their own variable- ex: toy instead this.props.toy)
-    const { trip, numUsers, claimTrip, unclaimTrip, tripsReducer } = this.props;
+    const { trip, claimTrip, unclaimTrip, tripsReducer } = this.props;
 
    let buttonsVisible =  
    <div>

@@ -21,7 +21,6 @@ class TripForm extends Component {
 
   handleonSubmit = event => {
     event.preventDefault()
-    //console.log(this.props.toyFormData)
     
      const { createTrip, tripFormData } = this.props;
       createTrip(tripFormData);
