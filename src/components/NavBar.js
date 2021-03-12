@@ -26,7 +26,7 @@ const NavBar = () => {
                 View All Trips
             </Link>
 
-            <Link to='/myStuff' className='item'>
+            <Link to='/myTrips' className='item'>
                 View My Trips
             </Link> 
  
