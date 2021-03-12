@@ -45,3 +45,5 @@ class MyTrips extends Component {
   
   export default connect(mapStateToProps)(MyTrips);
   
+  
+  

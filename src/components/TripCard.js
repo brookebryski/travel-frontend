@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-//import './Toy.css';
+import './Trip.css';
 import '../App.css';
 import {Card, Image } from 'semantic-ui-react';
 import { claimTrip, unclaimTrip } from '../actions/tripHistories';

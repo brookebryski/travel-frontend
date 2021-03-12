@@ -1,0 +1,88 @@
+* {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+  
+  }
+  
+  .TripImage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 445px;
+      height: 280px;
+    }
+    
+   
+  
+  .user-class {
+      color: #c8782f;
+  }
+   
+  .plus-class {
+    color: #01a7b7;
+    font-size: 10px;
+   }
+  
+   .minus-class {
+    color: #d76735;
+   }
+  
+   .hot-class {
+     color: #de4b43
+   }
+  
+    .total-class {
+    color: #98c4d1
+  }
+  
+  .button
+  {
+      color: black;
+      width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    font-style: bold;
+    font-size: 16px;
+   
+   
+    
+  }
+  
+  .claim-button
+  {
+    background-color:#b4d3aa;
+   
+  }
+  
+  .unclaim-button
+  {
+    background-color:#f1956e;
+   
+  
+  }
+  
+  .button-login
+  {
+      background-color:#01a7c7;
+   
+  }
+  
+  .button-add
+  {
+    background-color:#fbd266;
+    
+  }
+  
+  .button-signup
+  {
+    background-color:#d76735;
+    
+  }
+  
+  .button-logout
+  {
+    background-color:#50b6ab;
+    
+  }
+  
