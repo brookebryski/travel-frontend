@@ -3,6 +3,39 @@ import { connect } from 'react-redux';
 import TripCard from '../components/TripCard';
 import { Card } from 'semantic-ui-react'
 import { Divider } from 'semantic-ui-react'
+import { getAllTrips } from "../actions/trips";
+
+class Trips extends React.Component {
+
+  componentDidMount() {
+    this.props.getAllTrips()
+  }
+
+
+  render() {
+   return (
+     <div>
+       console.log(this.state.props)
+     </div>
+   )
+   }
+  }
+    
+         
+
+const mapStateToProps = (state) => {
+  return ({
+    trips: state.trips
+   })
+}
+
+export default connect(mapStateToProps, {getAllTrips})(Trips);
+/*
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import TripCard from '../components/TripCard';
+import { Card } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 
 
 class Trips extends Component {
@@ -36,3 +69,5 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Trips);
+*/
+
