@@ -1,6 +1,6 @@
 * {
     text-align: center;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Shippori Mincho B1', serif;
   
   }
   
@@ -64,13 +64,13 @@
   
   .button-login
   {
-      background-color:#01a7c7;
+      background-color:#3ec7e2;
    
   }
   
   .button-add
   {
-    background-color:#fbd266;
+    background-color:#fae638;
     
   }
   
@@ -82,7 +82,7 @@
   
   .button-logout
   {
-    background-color:#50b6ab;
+    background-color:#3ec7e2;
     
   }
   

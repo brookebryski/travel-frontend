@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap');
 .App {
     text-align: center;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Shippori Mincho B1', serif;
   
   }
   
   h3{
-    /* font-family: 'Monoton', cursive; */
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Shippori Mincho B1', serif;
     font-style: bold;
     font-size: 40px;
-    color: #519d90;
+    color: #f35641;
   }
    
   div.ui.menu {
-    background-color: #de7e30;
+    background-color: #fae638;
     font-size: 16px;
   }
   
@@ -44,7 +44,7 @@
   }
   
   .App-link {
-    color: #61dafb;
+    color: #f35641;
   }
   
   @keyframes App-logo-spin {
