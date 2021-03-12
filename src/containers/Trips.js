@@ -10,12 +10,11 @@ class Trips extends React.Component {
   componentDidMount() {
     this.props.getAllTrips()
   }
-
-
+//instead of <tripCard I did a simple console.log to know i was rendering this
   render() {
    return (
      <div>
-       console.log(this.state.props)
+    <tripCard/>
      </div>
    )
    }
