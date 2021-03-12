@@ -17,15 +17,7 @@ class Trips extends Component {
     
          return (
 
-          <div className="All Trips">
-            <Divider hidden />
-
-           
-
-              {tripsReducer.currentUser.username ? <h3>{tripsReducer.currentUser.username}'s Trips</h3> : <strong>Log in or sign up</strong>}
-
-              <Divider hidden />
-
+          <div className="Trips">
               
                <Card.Group itemsPerRow={3}>
                {tripsReducer.userTrips.map((trip, id) => <TripCard numUsers={trip.users.length} claimed={trip.claimed} key={id} trip={trip} />)}
@@ -36,7 +28,6 @@ class Trips extends Component {
   }
 
 }
-
 
 const mapStateToProps = (state) => {
   return ({

@@ -1,7 +1,7 @@
 // Synchronous action creators
 export const setTripHistories = (tripHistories) => {
     return {
-        type: 'GET_TRIP_OWNERSHIPS_SUCCESS',
+        type: 'GET_TRIP_HISTORIES_SUCCESS',
         tripHistories
         
     }
