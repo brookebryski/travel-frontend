@@ -42,7 +42,7 @@ class App extends React.Component {
           <div className="App">
           <NavBar />
 
-          <h3>Travel Journal</h3>
+          <h3>My Travel Journal</h3>
            
           { loggedIn ? <Logout /> : <div> <Login /> <Signup /> </div> }
           { loggedIn ? <TripForm /> : ""}

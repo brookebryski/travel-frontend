@@ -1,3 +1,6 @@
+// import { getMyTrips } from '../actions/currentUser';
+
+
 // Synchronous action creators
 export const setTripHistories = (tripHistories) => {
     return {

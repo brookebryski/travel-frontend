@@ -27,15 +27,14 @@ class TripCard extends Component {
 
  
   render(){
-    //Destructure to extract data from objects into their own variable- ex: toy instead this.props.toy)
-    const { trip, claimTrip, unclaimTrip, tripsReducer } = this.props;
+    //Destructure to extract data from objects into their own variable- ex: trip instead this.props.trip)
+    const { trip, numUsers, claimTrip, unclaimTrip, tripsReducer } = this.props;
 
    let buttonsVisible =  
    <div>
    { trip.claimed !== "true" ? 
-    <div className="claim-button" onClick={() => {claimTrip(trip, tripsReducer.currentUser)}}><i className='plus icon plus-class'  />I have been here</div> :
-    <div className="unclaim-button" onClick={() => {unclaimTrip( tripsReducer.tripHistories, trip, tripsReducer.currentUser)}}><i className="minus icon minus-class" />I have not been here</div> 
-    //I have been here, I want to go here?
+    <div className="claim-button" onClick={() => {claimTrip(trip, tripsReducer.currentUser)}}><i className='plus icon plus-class'  />I went here</div> :
+    <div className="unclaim-button" onClick={() => {unclaimTrip( tripsReducer.tripHistories, trip, tripsReducer.currentUser)}}><i className="minus icon minus-class" />I did not go here</div> 
    }   </div>
 
 
@@ -61,9 +60,10 @@ class TripCard extends Component {
 
  
                 </Card.Content>
-      
 
-              
+                <Card.Content extra>
+                    <i className='users icon user-class' /> {numUsers !== undefined ? trip.users.length : 0}
+                 </Card.Content>
  
 
             {tripsReducer.currentUser.username ? buttonsVisible : ""}

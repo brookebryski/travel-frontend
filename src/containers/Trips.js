@@ -1,72 +1,56 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import TripCard from '../components/TripCard';
-import { Card } from 'semantic-ui-react'
-import { Divider } from 'semantic-ui-react'
-import { getAllTrips } from "../actions/trips";
-
-class Trips extends React.Component {
-
-  componentDidMount() {
-    this.props.getAllTrips()
-  }
-//instead of <tripCard I did a simple console.log to know i was rendering this
-  render() {
-   return (
-     <div>
-    <tripCard/>
-     </div>
-   )
-   }
-  }
-    
-         
-
-const mapStateToProps = (state) => {
-  return ({
-    trips: state.trips
-   })
-}
-
-export default connect(mapStateToProps, {getAllTrips})(Trips);
-/*
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import TripCard from '../components/TripCard';
-import { Card } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react';
+import Stats from '../components/Stats';
 import { Divider } from 'semantic-ui-react'
 
 
 class Trips extends Component {
 
+    state = {newSearch: ""}
+
+
+    handleInputChange = e => {
+        this.setState({newSearch: e.target.value})
+    }
+
+
+    render() {
+        //Destructure to extract data from objects into their own variable- ex: trip instead this.props.trip)
+        const { tripsReducer} = this.props;
+        
+        //copy trips so sort does not mutate
+        let topToys = [...tripsReducer.trips].sort((a, b) => (a.users.length > b.users.length) ? -1 : 1)
+        let toysMatch = tripsReducer.trips.filter( (trip ) => trip.name.toLowerCase().includes(this.state.newSearch.toLowerCase()))
+  
+        return (
+            <div className="Trips">
+                <input placeholder="toyName" value={this.state.newSearch} name="toyName" type="text" onChange={this.handleInputChange} />
+            <Divider />
+            <Stats numToys={tripsReducer.trips.length} topThree={topToys.slice(0, 3)}/>
+            <Divider />
+
+
  
+                <Card.Group itemsPerRow={3}>
+                    {/* { tripsReducer.trips.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)} */}
+                            { toysMatch.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)}
+                            </Card.Group>
 
 
-  render() {
-    //Destructure to extract data from objects into their own variable- ex: toy instead this.props.toy)
-    const { tripsReducer  } = this.props;
+            </div>
+        )
+    }
 
-    
-         return (
-
-          <div className="Trips">
-              
-               <Card.Group itemsPerRow={3}>
-               {tripsReducer.userTrips.map((trip, id) => <TripCard numUsers={trip.users.length} claimed={trip.claimed} key={id} trip={trip} />)}
-
-              </Card.Group>
-           </div>
-      )
-  }
 
 }
 
 const mapStateToProps = (state) => {
-  return ({
-    tripsReducer: state.tripsReducer
-   })
-}
+    return ({
+      tripsReducer: state.tripsReducer
+     })
+  }
 
-export default connect(mapStateToProps)(Trips);
-*/
+ export default connect(mapStateToProps)(Trips);
 

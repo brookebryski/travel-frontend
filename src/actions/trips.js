@@ -44,7 +44,7 @@ export const getAllTrips = () => {
       })
         //when resolved, parse response data to JSON
         .then(r => r.json())
-        //dispatch action to set toys and send to reducer to update state
+        //dispatch action to set trips and send to reducer to update state
         .then(trips => {
           dispatch(fetchTripsSuccess(trips));
           dispatch(getTripHistories());
@@ -63,7 +63,7 @@ export const getAllTrips = () => {
  
 
 
-export const createTrip = trip => {
+export const createTrip= trip => {
     return dispatch => {
       return fetch("http://localhost:3000/api/v1/trips", {
         credentials: "include",

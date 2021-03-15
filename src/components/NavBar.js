@@ -18,20 +18,20 @@ const NavBar = () => {
        
 
       
-            <Link to='/' className='item'>
+            <Link to='/' className='trip'>
                 Home
             </Link>
 
-            <Link to='/trips' className='item'>
+            <Link to='/trips' className='trip'>
                 View All Trips
             </Link>
 
-            <Link to='/myTrips' className='item'>
+            <Link to='/myTrips' className='trip'>
                 View My Trips
             </Link> 
  
 
-            <Link to='/about' className='item'>
+            <Link to='/about' className='trip'>
                 About Us
             </Link>
 

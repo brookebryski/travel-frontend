@@ -37,7 +37,7 @@ const Login = ({ loginFormData,  updateLoginForm, login }) => {
         
         <form onSubmit={handleSubmit}>
             <div className="ui input">
-            <input placeholder="username" value={loginFormData.username} name="username" type="text" onChange={handleInputChange}/>
+            <input placeholder="user name" value={loginFormData.username} name="username" type="text" onChange={handleInputChange}/>
             <input placeholder="password" value={loginFormData.password} name="password" type="text" onChange={handleInputChange}/><br/><br/>
             <button className="button button-login" type="submit" value="Log In" > <Icon name="sign in" /> Log in </button>
              </div>

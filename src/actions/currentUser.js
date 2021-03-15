@@ -16,6 +16,7 @@ export const setCurrentUser = (user, trips)  => {
 
 export const setMyTrips = (user, trips)=> {
   return {
+   // type: "GET_MY_TOYS_SUCCESS",
     type: "GET_USER_TRIPS_SUCCESS",
 
     user,
@@ -42,7 +43,6 @@ export const clearCurrentUser = () => {
 
 // Asynchronous action creators
 export const login = credentials => {
-  debugger
   return dispatch => {
     return fetch("http://localhost:3000/api/v1/login", {
       credentials: "include",
@@ -75,6 +75,7 @@ export const logout = () => {
 
     .then( () => {
       dispatch(clearLoginForm())
+     //history.push("/trips")
 
     }
 

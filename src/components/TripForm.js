@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateTripFormData } from '../actions/tripForm';
-import { createTrip } from '../actions/trips';
+import { createTrip} from '../actions/trips';
 import { Form, Icon, Divider } from 'semantic-ui-react';
  
 
@@ -21,6 +21,7 @@ class TripForm extends Component {
 
   handleonSubmit = event => {
     event.preventDefault()
+    //console.log(this.props.tripFormData)
     
      const { createTrip, tripFormData } = this.props;
       createTrip(tripFormData);
@@ -82,4 +83,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { updateTripFormData, createTrip })(TripForm);
+export default connect(mapStateToProps, { updateTripFormData, createTrip})(TripForm);
