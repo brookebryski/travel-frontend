@@ -28,7 +28,7 @@ class Trips extends Component {
             <div className="Trips">
                 <input placeholder="Search a Location" value={this.state.newSearch} name="tripName" type="text" onChange={this.handleInputChange} />
             <Divider />
-            <Stats numToys={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
+            <Stats numTrips={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
             <Divider />
 
 
