@@ -21,21 +21,21 @@ class Trips extends Component {
         const { tripsReducer} = this.props;
         
         //copy trips so sort does not mutate
-        let topToys = [...tripsReducer.trips].sort((a, b) => (a.users.length > b.users.length) ? -1 : 1)
-        let toysMatch = tripsReducer.trips.filter( (trip ) => trip.name.toLowerCase().includes(this.state.newSearch.toLowerCase()))
+        let topTrips = [...tripsReducer.trips].sort((a, b) => (a.users.length > b.users.length) ? -1 : 1)
+        let tripsMatch = tripsReducer.trips.filter( (trip ) => trip.name.toLowerCase().includes(this.state.newSearch.toLowerCase()))
   
         return (
             <div className="Trips">
-                <input placeholder="toyName" value={this.state.newSearch} name="toyName" type="text" onChange={this.handleInputChange} />
+                <input placeholder="Search a Location" value={this.state.newSearch} name="tripName" type="text" onChange={this.handleInputChange} />
             <Divider />
-            <Stats numToys={tripsReducer.trips.length} topThree={topToys.slice(0, 3)}/>
+            <Stats numToys={tripsReducer.trips.length} topThree={topTrips.slice(0, 3)}/>
             <Divider />
 
 
  
                 <Card.Group itemsPerRow={3}>
                     {/* { tripsReducer.trips.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)} */}
-                            { toysMatch.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)}
+                            { tripsMatch.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)}
                             </Card.Group>
 
 
