@@ -3,7 +3,7 @@
 *Intro*
 
 # Installation
-This app is designed to run in conjunction with a custom Rails backend API, travel-backend. Please redirect to the backend repository and follow those installation instructions before continuing with the installation of the frontend. 
+This app is designed to run in conjunction with a custom Rails backend API,  [travel-backend](https://github.com/brookebryski/travel-backend.git).
 
 To install the frontend of this application:
 
