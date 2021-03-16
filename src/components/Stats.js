@@ -12,7 +12,7 @@ let items = topThree.map((i, key) => {
 
       return (
         <div>
-             <i className='gamepad icon total-class' /><strong>Total trips</strong><p>{numToys} </p>
+             <i className='gamepad icon total-class' /><strong>Total trips</strong><p>{numTrips} </p>
             <i className='hotjar icon hot-class' /><strong>Top trips</strong>
             {items}
 
