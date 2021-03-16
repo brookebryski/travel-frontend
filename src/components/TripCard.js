@@ -50,14 +50,6 @@ class TripCard extends Component {
   
    
 
-                <div>
-                  { this.state.liked ? 
-                      <button className="unlike-button" onClick={this.clickHandler}><i className="red heart icon"  />Liked</button> :
-                      <button className="like-button" onClick={this.clickHandler}><i className="red heart outline icon" />Like</button> 
-                  }   
-                  </div>
-
-
  
                 </Card.Content>
 
