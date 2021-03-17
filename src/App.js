@@ -10,7 +10,7 @@ import MyTrips from './containers/MyTrips';
 import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import About from './components/About';
+import Inspiration from './components/Inspiration';
 import Login from "./components/Login"
 import Logout from "./components/Logout"
 import { getAllTrips } from './actions/trips';
@@ -51,7 +51,7 @@ class App extends React.Component {
                 <Route exact path="/" component={Home}/>
                 <Route path="/trips" component={Trips} />
                 <Route path="/myTrips" component={MyTrips} /> 
-                <Route path="/about" component={About}/>
+                <Route path="/inspiration" component={Inspiration}/>
           </Switch> 
 
           <Divider />

@@ -31,8 +31,8 @@ const NavBar = () => {
             </Link> 
  
 
-            <Link to='/about' className='trip'>
-                About Us
+            <Link to='/inspiration' className='trip'>
+                Inspiration
             </Link>
 
    
