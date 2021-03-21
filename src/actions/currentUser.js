@@ -16,7 +16,6 @@ export const setCurrentUser = (user, trips)  => {
 
 export const setMyTrips = (user, trips)=> {
   return {
-   // type: "GET_MY_TOYS_SUCCESS",
     type: "GET_USER_TRIPS_SUCCESS",
 
     user,
@@ -75,7 +74,6 @@ export const logout = () => {
 
     .then( () => {
       dispatch(clearLoginForm())
-     //history.push("/trips")
 
     }
 

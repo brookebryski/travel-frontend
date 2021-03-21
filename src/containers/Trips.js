@@ -34,7 +34,6 @@ class Trips extends Component {
 
  
                 <Card.Group itemsPerRow={3}>
-                    {/* { tripsReducer.trips.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)} */}
                             { tripsMatch.map((trip, id) => <TripCard  claimed={trip.claimed} numUsers={trip.users.length} key={id} trip={trip} />)}
                             </Card.Group>
 

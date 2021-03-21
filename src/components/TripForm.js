@@ -21,7 +21,6 @@ class TripForm extends Component {
 
   handleonSubmit = event => {
     event.preventDefault()
-    //console.log(this.props.tripFormData)
     
      const { createTrip, tripFormData } = this.props;
       createTrip(tripFormData);
@@ -79,7 +78,6 @@ class TripForm extends Component {
 const mapStateToProps = state => {
   return {
     tripFormData: state.tripFormData,
-    //errors: state.errors
   }
 }
 
