@@ -23,9 +23,7 @@ import history from './history';
 class App extends React.Component {
 
   componentDidMount() {
-      this.props.getAllTrips();
-
-      
+      this.props.getAllTrips();  
  }
  
  
@@ -76,4 +74,4 @@ const mapStateToProps = (state) => {
  
 
 
- export default connect(mapStateToProps, {getAllTrips})(App);
+ export default connect(mapStateToProps, {getAllTrips})(App); //we can export the getAllTrips object rather than needing to write mapDispatchToProps so connect handles dispatch for us

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+//container components are primarily concerned with managing state and actions that mutate the state of the app, so they are a good place to connect to the store
 import TripCard from '../components/TripCard';
 import { Card } from 'semantic-ui-react';
 import Stats from '../components/Stats';

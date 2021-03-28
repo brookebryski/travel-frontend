@@ -1,7 +1,7 @@
 import { clearLoginForm } from "../actions/loginForm";
 import { resetSignupForm } from "../actions/signupForm";
 import store from '../store'
-//import history from '../history';
+import history from '../history';
 
 //action needs a key of type
 

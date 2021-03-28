@@ -1,7 +1,7 @@
 import { resetTripForm } from "./tripForm";
 import { getTripHistories } from "./tripHistories";
 
-// ** Synchronous Actions Creators **
+// ** Synchronous Action Creators **
 // Action creators create actions which are plain objects → 
 // Actions are dispatched to the store → 
 // the store invokes reducers → 
@@ -10,7 +10,7 @@ import { getTripHistories } from "./tripHistories";
 export const fetchTripsSuccess = trips => {
   return {
     type: "GET_ALL_TRIPS_SUCCESS",
-    trips
+    trips //we only need one word here because the key and value have the same name
   };
 };
 

@@ -1,4 +1,3 @@
-// import { getMyTrips } from '../actions/currentUser';
 
 
 // Synchronous action creators
